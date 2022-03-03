@@ -1,0 +1,9 @@
+<form [formGroup]="keyForm" *ngIf="showKeys" (ngSubmit)="onSubmit()">
+    <label for="publicKey">Pubic Key: </label>
+    <input id="publicKey" type="text" formControlName="publicKey">
+
+    <label for="privateKey">Private Key: </label>
+    <input id="privateKey" type="text" formControlName="privateKey">
+
+    <button type="submit">Validate</button>
+</form>
